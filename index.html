@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Realurl by manuelvanrijn</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Realurl</h1>
+        <p>A simple command-line/module to convert short url's to the original url</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/manuelvanrijn/node-realurl" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/manuelvanrijn/node-realurl/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/manuelvanrijn/node-realurl/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>Realurl <a href="http://travis-ci.org/manuelvanrijn/node-realurl"><img src="https://secure.travis-ci.org/manuelvanrijn/node-realurl.png" alt="Build Status"></a>
+</h1>
+
+<p>A simple command-line/module to convert short url's to the original url.</p>
+
+<h2>Getting Started</h2>
+
+<p>Install the module with: <code>npm install realurl -g</code></p>
+
+<p>I would recommend installing it globally so you can use it from the command line.</p>
+
+<h3>From the command line</h3>
+
+<div class="highlight"><pre><span class="nv">$ </span>realurl http://goo.gl/BGV9x
+
+Retrieving the real url <span class="k">for</span>: http://goo.gl/BGV9x
+
+Real URL location:
+https://github.com/manuelvanrijn/node-realurl
+</pre></div>
+
+<h3>Within your NodeJS project</h3>
+
+<div class="highlight"><pre><span class="kd">var</span> <span class="nx">realurl</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'realurl'</span><span class="p">);</span>
+<span class="nx">realurl</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'http://goo.gl/BGV9x'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">,</span> <span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+   <span class="c1">// error = false;</span>
+   <span class="c1">// result = "http://github.com/manuelvanrijn/node-realurl";</span>
+<span class="p">});</span>
+</pre></div>
+
+<h2>Contributing</h2>
+
+<p>In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using <a href="https://github.com/cowboy/grunt">grunt</a>.</p>
+
+<h2>Release History</h2>
+
+<ul>
+<li>2012/10/02 - v0.1.0 - Initial release.</li>
+</ul><h2>License</h2>
+
+<p>Copyright (c) 2012 Manuel van Rijn - Licensed under the MIT license.</p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/manuelvanrijn">manuelvanrijn</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-17149124-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
